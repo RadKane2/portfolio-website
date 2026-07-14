@@ -1,12 +1,24 @@
+import { Container, Typography } from "@mui/material";
+
 function Contact() {
   return (
-    <div>
-      <h1>Contact</h1>
+    <Container sx={{ mt: 5 }}>
+      <Typography variant="h3">
+        Contact
+      </Typography>
 
-      <p>Email: angel.rfm.123@gmail.com</p>
+      <Typography sx={{ mt: 2 }}>
+        GitHub: RadKane2
+      </Typography>
 
-      <p>GitHub: RadKane2</p>
-    </div>
+      <Typography>
+        LinkedIn: Your LinkedIn Profile
+      </Typography>
+
+      <Typography>
+        Email: your@email.com
+      </Typography>
+    </Container>
   );
 }
 

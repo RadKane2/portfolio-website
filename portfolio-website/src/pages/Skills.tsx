@@ -1,16 +1,30 @@
+import {
+  Container,
+  Typography,
+  Chip,
+  Stack
+} from "@mui/material";
+
 function Skills() {
   return (
-    <div>
-      <h1>Skills</h1>
+    <Container sx={{ mt: 5 }}>
+      <Typography variant="h3" gutterBottom>
+        Skills
+      </Typography>
 
-      <ul>
-        <li>React</li>
-        <li>TypeScript</li>
-        <li>C#</li>
-        <li>ASP.NET Core</li>
-        <li>SQL Server</li>
-      </ul>
-    </div>
+      <Stack direction="row" spacing={1} flexWrap="wrap">
+        <Chip label="React" />
+        <Chip label="TypeScript" />
+        <Chip label="C#" />
+        <Chip label="ASP.NET Core" />
+        <Chip label="SQL Server" />
+        <Chip label="Entity Framework" />
+        <Chip label="Power BI" />
+        <Chip label="Power Apps" />
+        <Chip label="Git" />
+        <Chip label="GitHub" />
+      </Stack>
+    </Container>
   );
 }
 

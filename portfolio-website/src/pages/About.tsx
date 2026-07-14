@@ -1,18 +1,24 @@
+import { Container, Typography } from "@mui/material";
+
 function About() {
   return (
-    <div>
-      <h1>About Me</h1>
+    <Container sx={{ mt: 5 }}>
+      <Typography variant="h3" gutterBottom>
+        About Me
+      </Typography>
 
-      <p>
-        Full Stack Developer with experience in React,
-        TypeScript, ASP.NET Core and SQL Server.
-      </p>
+      <Typography>
+        Systems Engineering student with experience in
+        Full Stack Development, IT Infrastructure and
+        business process automation.
+      </Typography>
 
-      <p>
-        Experience in IT Infrastructure and Asset
-        Management projects.
-      </p>
-    </div>
+      <Typography sx={{ mt: 2 }}>
+        During my internship at Daimler Truck Mexico,
+        I participated in asset management, inventory
+        control and IT infrastructure projects.
+      </Typography>
+    </Container>
   );
 }
 

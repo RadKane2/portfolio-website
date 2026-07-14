@@ -1,15 +1,43 @@
+import {
+  Container,
+  Typography,
+  Card,
+  CardContent
+} from "@mui/material";
+
 function Projects() {
   return (
-    <div>
-      <h1>Projects</h1>
+    <Container sx={{ mt: 5 }}>
+      <Typography variant="h3" gutterBottom>
+        Projects
+      </Typography>
 
-      <h2>IT Inventory Management System</h2>
+      <Card>
+        <CardContent>
+          <Typography variant="h5">
+            IT Inventory Management System
+          </Typography>
 
-      <p>
-        Asset management platform with role-based access,
-        equipment assignment and employee administration.
-      </p>
-    </div>
+          <Typography>
+            Full Stack application developed using
+            React, TypeScript, ASP.NET Core and
+            SQL Server.
+          </Typography>
+
+          <Typography sx={{ mt: 2 }}>
+            Features:
+          </Typography>
+
+          <ul>
+            <li>Role Based Access Control</li>
+            <li>Asset Assignment</li>
+            <li>Employee Management</li>
+            <li>Request Workflows</li>
+            <li>Audit History</li>
+          </ul>
+        </CardContent>
+      </Card>
+    </Container>
   );
 }
 
