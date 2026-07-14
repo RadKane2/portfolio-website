@@ -1,11 +1,9 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+@import "tailwindcss";
+
+html{
+    scroll-behavior:smooth;
 }
 
-body {
-  background-color: white;
-  color: black;
-  font-family: Arial, sans-serif;
+body{
+    @apply bg-slate-950 text-white;
 }
