@@ -3,7 +3,7 @@ import { Container, Typography, Button, Stack } from "@mui/material";
 function Home() {
   return (
     <Container sx={{ mt: 10 }}>
-      <Typography variant="h2" fontWeight="bold">
+      <Typography variant="h2" fontWeight="bold">gitt
         Angel Rios Vega
       </Typography>
 
