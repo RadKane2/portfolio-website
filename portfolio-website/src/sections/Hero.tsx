@@ -1,5 +1,6 @@
 import { Download, Mail } from "lucide-react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { profile } from "../data/profile";
 
 function Hero() {
   return (
@@ -16,58 +17,55 @@ function Hero() {
         <div>
           <p className="mb-4 text-lg font-medium text-cyan-400">
             Hola, soy
-          </p>
+            </p>
 
-          <h1 className="max-w-3xl text-5xl font-bold tracking-tight text-white sm:text-6xl lg:text-7xl">
-            Angel Daniel
-            <span className="block text-cyan-400">Ríos Vega</span>
-          </h1>
+            <h1 className="max-w-3xl text-5xl font-bold tracking-tight text-white sm:text-6xl lg:text-7xl">
+            {profile.firstName}
+            <span className="block text-cyan-400">{profile.lastName}</span>
+            </h1>
 
-          <h2 className="mt-6 text-2xl font-semibold text-slate-200 sm:text-3xl">
-            Software Developer · IT Infrastructure · AI Projects
-          </h2>
+            <h2 className="mt-6 text-2xl font-semibold text-slate-200 sm:text-3xl">
+            {profile.roles.join(" · ")}
+            </h2>
 
-          <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-400">
-            Desarrollo aplicaciones web, soluciones empresariales y proyectos
-            tecnológicos utilizando React, TypeScript, ASP.NET Core, SQL Server
-            y Python.
-          </p>
+            <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-400">
+            {profile.description}
+            </p>
 
           <div className="mt-9 flex flex-wrap gap-4">
             <a
-              href="/Angel_Daniel_Rios_Vega_CV.pdf"
-              download
-              className="inline-flex items-center gap-2 rounded-lg bg-cyan-400 px-5 py-3 font-semibold text-slate-950 transition hover:bg-cyan-300"
+                href={profile.cv}
+                download
+                className="inline-flex items-center gap-2 rounded-lg bg-cyan-400 px-5 py-3 font-semibold text-slate-950 transition hover:bg-cyan-300"
             >
-              <Download size={20} />
-              Descargar CV
+             <Download size={20} />
+                Descargar CV
             </a>
 
             <a
-              href="https://github.com/RadKane2"
-              target="_blank"
-              rel="noreferrer"
-              className="inline-flex items-center gap-2 rounded-lg border border-slate-700 px-5 py-3 font-semibold text-slate-200 transition hover:border-cyan-400 hover:text-cyan-400"
+                href={profile.github}
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center gap-2 rounded-lg border border-slate-700 px-5 py-3 font-semibold text-slate-200 transition hover:border-cyan-400 hover:text-cyan-400"
             >
-             <FaGithub size={20} />
-              GitHub
+               <FaGithub size={20} />
+                GitHub
             </a>
-
           </div>
 
           <div className="mt-8 flex items-center gap-5">
             <a
-              href="https://www.linkedin.com/in/angel-daniel-rios-vega-b999151b9"
-              target="_blank"
-              rel="noreferrer"
-              aria-label="LinkedIn"
-              className="text-slate-400 transition hover:text-cyan-400"
+                href={profile.linkedin}
+                target="_blank"
+                rel="noreferrer"
+                aria-label="LinkedIn"
+                className="text-slate-400 transition hover:text-cyan-400"
             >
               <FaLinkedin size={24} />
             </a>
 
             <a
-              href="https://github.com/RadKane2"
+              href={profile.github}
               target="_blank"
               rel="noreferrer"
               aria-label="GitHub"
@@ -77,11 +75,11 @@ function Hero() {
             </a>
 
             <a
-                href="mailto:angel.rfm.123@gmail.com"
+                href={`mailto:${profile.email}`}
+                aria-label="Correo electrónico"
                 className="text-slate-400 transition hover:text-cyan-400"
-                aria-label="Correo"
             >
-                <Mail size={24} />
+              <Mail size={24} />
             </a>
           </div>
         </div>
