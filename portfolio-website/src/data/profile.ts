@@ -1,6 +1,6 @@
 export const profile = {
-  name: "Ángel Daniel Ríos Vega",
-  firstName: "Ángel Daniel",
+  name: "Angel Daniel Ríos Vega",
+  firstName: "Angel Daniel",
   lastName: "Ríos Vega",
 
   roles: [
