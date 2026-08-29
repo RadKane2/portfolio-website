@@ -15,6 +15,7 @@ export const profile = {
   email: "angel.rfm.123@gmail.com",
   github: "https://github.com/RadKane2",
   linkedin: "https://www.linkedin.com/in/angel-daniel-rios-vega-b999151b9",
+  location: "Saltillo, Coahuila, México",
 
   cv: "/Angel_Daniel_Rios_Vega_CV.pdf",
 };

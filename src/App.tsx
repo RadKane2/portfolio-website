@@ -6,6 +6,7 @@ import Experience from "./sections/Experience";
 import Technologies from "./sections/Technologies";
 import Projects from "./sections/Projects";
 import Contact from "./sections/Contact";
+import Footer from "./components/layouts/Footer";
 
 function App() {
   return (
@@ -27,8 +28,11 @@ function App() {
         <Contact />
 
       </main>
+
+      <Footer />
     </>
   );
 }
+
 
 export default App;
